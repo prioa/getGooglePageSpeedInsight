@@ -30,7 +30,7 @@
 if(!empty($url)){
   echo "<pre style='font-weight:bold;'>";
   $curl_handle=curl_init();
-  curl_setopt($curl_handle,CURLOPT_URL,"https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=".$url."&strategy=mobile&key=AIzaSyAV3NiONeBgkJj21rHHD9OsF0IiJ3pQEp8");
+  curl_setopt($curl_handle,CURLOPT_URL,"https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=".$url."&strategy=mobile&key=YOUR_API_KEY");
   curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
   curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
   $buffer = curl_exec($curl_handle);
